@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li,a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    color: white;
+}
+.logo{
+    font-size: 5rem;
+    color: white;
+
+}
+.logo{
+    cursor: pointer;
+}
+.nav__links{
+    list-style: none;
+    
+}
+.nav__links li{
+    display: inline-block;
+    padding: 25px;
+}
+.nav__links li a{
+    color: white;
+}
+.row{
+    margin: 0 15% 0 15%;
+    background: rgba(153, 205, 50, 0.753);
+    position: absolute;
+}
+.hero{
+    position: relative;
+    background-image: url(/asset/image/pexels-pixabay-39284.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
