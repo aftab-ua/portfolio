@@ -1,47 +1,92 @@
+@import '/asset/css/utilities.css';
+
+:root{
+    --primary:#3DCFD3;
+    --drak: #161616;
+    --ternary: #898989;
+    --light: #F2F2F2;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-li,a{
-    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
 }
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: gray;
+    background: black;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+header nav .left a{
     color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 2rem;
+    transition: all 2s ease;
+}
+
+header nav{
+    padding: 2rem 0;
+}
+header nav .branding{
+    margin-right: 3rem;
+    
 }
 .logo{
-    font-size: 5rem;
-    color: white;
+    width: 166px;
+}
+header nav .left a:hover{
+    color: var(--primary);
 
 }
-.logo{
-    cursor: pointer;
+.hero{
+    padding: 3rem 0;
 }
-.nav__links{
-    list-style: none;
-    
+.hero .left img{
+    width: 323px;
+
 }
-.nav__links li{
-    display: inline-block;
-    padding: 25px;
-}
-.nav__links li a{
+.hero .right{
     color: white;
 }
-.row{
-    margin: 0 15% 0 15%;
-    background: rgba(153, 205, 50, 0.753);
-    position: absolute;
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
 }
-.hero{
-    position: relative;
-    background-image: url(/asset/image/pexels-pixabay-39284.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+.hero .right h1{
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 4rem;
+}
+.hero .right h1 span{
+    color: var(--primary);
+    font-size: 2.2rem;
+    margin-bottom: 2.8rem;
+}
+.hero .right p{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+.hero .right .social-links i{
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin: 0 1.3rem 1.5rem 0;
+    cursor: pointer;
+
+}
+.hero .right{
+    margin-top: -7rem;
+}
+.hero .right .social-links i:hover{
+    color: white;
 }
